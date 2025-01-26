@@ -1103,6 +1103,14 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.scroll-auto{
+  scroll-behavior: auto;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .text-wrap{
   text-wrap: wrap;
 }
@@ -1140,6 +1148,11 @@ video {
 .rounded-t-3xl{
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
+}
+
+.rounded-b-3xl{
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 .rounded-br-3xl{
@@ -1629,6 +1642,30 @@ video {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\]:hover{
+  color: ;
+}
+
+.hover\:text-\[\#0866ff\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(8 102 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#dd2a7b\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(221 42 123 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#ff0000\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
 }
 
 .hover\:no-underline:hover{
