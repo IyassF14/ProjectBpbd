@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#profileDropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+}
+
+#profileDropdown.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#ppidDropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+}
+
+#ppidDropdown.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#infoDropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+}
+
+#infoDropdown.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#servcDropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+}
+
+#servcDropdown.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#galDropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+}
+
+#galDropdown.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mySlides {
+    display: none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #60a5fa;
+}
+
+.active {
+    background-color: #6ee7b7;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

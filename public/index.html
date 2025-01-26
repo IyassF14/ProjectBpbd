@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bappelitbangda</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="flex justify-between items-center px-0 py-0 max-h-16 bg-emerald-300">
+        <div class="flex justify-between shadow-md w-5/6 rounded-br-3xl bg-white max-h-16">
+            <div class="flex justify-start items-center gap-1 px-3 py-3">
+                <img class="max-h-14" src="../img/main-logo.png" alt="">
+                <img class="max-h-12" src="../img/sulsel-logo.png" alt="">
+            </div>
+            <div class="flex justify-center w-[45px]">
+                <svg class="fill-emerald-300" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="0,0 0,13 15,32 0,51 0,64 25,32"/>
+                    <polygon points="20,0 20,13 35,32 20,51 20,64 45,32"/>
+                </svg>
+            </div>
+            <nav class="flex items-center font-FunnelSans text-base select-none z-10">
+                <a class="p-3 hover:text-emerald-300" href="index.html">Home</a>
+                <div id="profileDropdownBtn" class="p-3 relative">
+                    <div onclick="toggleprofileDropdown()" class="cursor-pointer hover:text-emerald-300">
+                        <a href="#">Profil</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul id="profileDropdown" class="absolute top-14 -left-2 border rounded border-emerald-300 bg-white w-48 shadow-md text-sm">
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Sambutan Kepala Bappelitbangda</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Profil Singkat Bappelitbangda</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Visi dan Misi</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Profil Pejabat Badan Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Struktur Organisasi Bappelitbangda</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Maksud dan Tujuan</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Tugas Dan Fungsi</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Susunan Unit Kerja</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Maklumat Pelayanan</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Informasi Khusus Lainnya Yang Berkaitan Langsung Dengan Hak-Hak Masyarakat</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Daftar Pegawai</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Data Statistik Kepegawaian</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Data Statistik Keuangan</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Data Penyelesaian Pelanggaran Disiplin</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Kedudukan/domisili beserta alamat lengkap Kantor Bappelitbangda Provinsi Sulawesi Selatan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="ppidDropdownBtn" class="p-3 relative">
+                    <div onclick="toggleppidDropdown()" class="cursor-pointer hover:text-emerald-300">
+                        <a href="#">PPID Pelaksana</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul id="ppidDropdown" class="absolute top-14 -left-2 border rounded border-emerald-300 bg-white w-48 shadow-md text-sm">
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Profil Singkat PPID</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Visi dan Misi PPID</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Profil Pejabat PPID Pelaksana</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Struktur Organisasi PPID</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Tugas Dan Fungsi PPID</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Hak dan Kewajiban Pemohon Informasi</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Standar Biaya Perolehan Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Sarana dan Prasarana PPID</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Anggaran PPID</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Monitoring dan Evaluasi Keterbukaan Infomasi</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Kedudukan/domisili beserta alamat lengkap Kantor PPID Pelaksana Bappelitbangda Provinsi Sulawesi Selatan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="infoDropdownBtn" class="p-3 relative">
+                    <div onclick="toggleinfoDropdown()" class="cursor-pointer hover:text-emerald-300">
+                        <a href="#">Infomasi Publik</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul id="infoDropdown" class="absolute top-14 -left-2 border rounded border-emerald-300 bg-white w-48 shadow-md text-sm">
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Daftar Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Informasi Berkala</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Informasi Setiap Saat</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Informasi Serta Merta</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Informasi Yang Dikecualikan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="servcDropdownBtn" class="p-3 relative">
+                    <div onclick="toggleservcDropdown()" class="cursor-pointer hover:text-emerald-300">
+                        <a href="#">Standar Layanan</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul id="servcDropdown" class="absolute top-14 -left-2 border rounded border-emerald-300 bg-white w-48 shadow-md text-sm">
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Prosedur Permintaan Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Prosedur Pengajuan Keberatan Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Prosedur Permohonan Penyelesaian Sengketa Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Prosedur Penanganan Sengketa Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Prosedur Pengujian Konsekuensi Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Prosedur Pengaduan Penyalahgunaan Wewenang Pejabat</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Maklumat Pelayanan Informasi Publik</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Kanal Layanan Informasi, Waktu & Biaya Pelayanan</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="p-3 hover:text-emerald-300" href="index.html">Dokumen</a>
+                <a class="p-3 hover:text-emerald-300" href="index.html">Aplikasi</a>
+                <div id="galDropdownBtn" class="p-3 relative">
+                    <div onclick="togglegalDropdown()" class="cursor-pointer hover:text-emerald-300">
+                        <a href="#">Galeri</a>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <ul id="galDropdown" class="absolute top-14 -left-2 border rounded border-emerald-300 bg-white w-48 shadow-md text-sm">
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Berita</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Artikel</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Pengumuman</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Foto</a>
+                        </li>
+                        <li class="cursor-pointer hover:text-emerald-300 px-4 py-3">
+                            <a class="block w-full h-full" href="#">Video</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="p-3 hover:text-emerald-300" href="index.html">Kontak</a>
+            </nav>
+        </div>
+        <div class="px-4">
+            <form>
+              <input class="border rounded-md ps-2" type="text" placeholder="Search.." name="search">
+              <button type="submit" aria-label="Search" title="Search for content"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+    </header>
+
+    <main>
+        <section class="box-border">
+            <div class="w-full relative m-auto">
+                <div class="mySlides fade">
+                    <img src="../img/slideshow/1.jpg" alt="slideshow 1" class="w-full">
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="../img/slideshow/2.jpg" alt="slideshow 2" class="w-full">
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="../img/slideshow/3.jpg" alt="slideshow 3" class="w-full">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../img/slideshow/4.jpg" alt="slideshow 4" class="w-full">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="cursor-pointer absolute top-1/2 w-auto -mt-[22px] p-4 text-white font-bold text-[18px] ease-in-out duration-[600ms] rounded-r-[3px] select-none hover:bg-emerald-300/80" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="cursor-pointer absolute top-1/2 right-0 w-auto -mt-[22px] p-4 text-white font-bold text-[18px] ease-in-out duration-[600ms] rounded-l-[3px] select-none hover:bg-emerald-300/80" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="text-center absolute inset-x-0 bottom-2">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+        <section class="flex justify-center w-full bg-gray-50 pt-4">
+            <div class="flex-col justify-center items-center rounded-3xl w-10/12 shadow-xl bg-white space-y-6">
+                <section class="flex items-center justify-center">
+                    <h2 class="font-bold text-2xl text-center w-3/4 py-5">Selamat Datang Di Website Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah Provinsi Sulawesi Selatan</h2>
+                </section>
+                <section class="box-border">
+                    <div class="relative px-6 py-4">
+                        <img class="w-full rounded-xl" src="../img/CityView.png" alt="">
+                        <div class="absolute w-3/4 h-auto left-1/2 transform -translate-x-1/2 top-16 backdrop-blur-sm bg-white/30">
+                            <p class="text-center text-4xl font-bold font-Cookie p-6 tracking-wider">"Menjadi Institusi Perencana Yang Bernilai Tinggi Demi Terwujudnya Perencanaan Pembangunan Daerah yang Berkualitas"</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex justify-center items-start w-full px-6 py-32 space-x-4">
+                    <div class="w-1/2">
+                        <img src="../img/kaban_setiawan_aswad.jpg" alt="Foto Kepala Bappelitbangda">
+                    </div>
+                    <div class="w-1/2 space-y-4">
+                        <p class="font-bold text-lg">Sambutan Kepala Bappelitbangda Prov. Sulsel</p>
+                        <p class="text-justify">Assalamualaikum Warahmatullahi Wabarakaatuh <br><br>Selamat datang di Website Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah Provinsi Sulawesi Selatan. <br><br>Dengan perkembangan teknologi informasi dan komunikasi, website bappelitbangda.sulselprov.go.id kini hadir di tengah masyarakat dengan harapan akan dapat mendukung kinerja dan produktivitas dalam rangka peningkatan kualitas pelayanan publik untuk penyediaan data dan informasi kepada publik yang berkaitan dengan Perencanaan, Pembangunan, Penelitian dan Pengembangan di Provinsi Sulawesi Selatan dan Website ini  juga sebagai wujud patuh dan tunduk terhadap lahirnya Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik. <br><br>Undang-undang ini dengan tegas memberikan kewajiban kepada Badan Publik untuk membuka informasi yang berkaitan dengan institusinya, kebijakan yang dihasilkan, serta kegiatan-kegiatan yang dilakukan, termasuk kondisi keuangan dan penggunaan anggaran. <br><br>Sesuai tugas pokok dan fungsi sebagai koordinator perencanaan pembangunan, penelitian dan pengembangan daerah, Bappelitbangda Prov. Sulsel berkomitmen untuk selalu berupaya mengoptimalkan kapasitas dan kompetensi dalam penyusunan perencanaan pembangunan daerah yang didukung oleh kajian kelitbangan yang akuntabel, guna mewujudkan visi dan misi daerah. <br><br>Dengan semangat transparansi dan melayani, kami berkomitmen memberikan pelayanan prima kepada masyarakat terkait dengan penyediaan Informasi Publik, baik melalui website, media lain seperti e-mail dan faksimili, maupun secara langsung. <br><br>Segala saran dan kritik yang konstruktif akan kami terima dengan harapan, agar pelayanan yang kami berikan semakin hari, semakin prima. <br><br>Akhir kata kami mengucapkan terima kasih atas perhatiannya, semoga website ini dapat bermanfaat untuk kita semua guna mewujudkan pembangunan yang berkelanjutan di Provinsi Sulawesi Selatan. <br><br>Wassalamualaikum Warahmatullahi Wabarakaatuh</p>
+                        <p class="font-bold text-lg">Dr. Setiawan Aswad, M.Dev., Plg</p>
+                    </div>
+                </section>
+                <section class="flex relative w-full mb-10 bg-gray-50">
+                    <div class="w-1/3">
+                        <img src="../img/permohonan-informasi.jpg" alt="Permohonan Infomasi">
+                    </div>
+                    <div class="flex flex-col justify-center h-80 w-2/3">
+                        <div class="flex px-16 h-2/5 pt-4">
+                            <h3 class="font-bold text-3xl">Permohonan Informasi</h3>
+                        </div>
+                        <div class="flex flex-col justify-between h-3/5">
+                            <div class="flex items-center justify-between space-x-5 px-10 text-xl">
+                                <a href="" class="text-xl underline decoration-2 underline-offset-8 hover:no-underline hover:bg-emerald-300 hover:text-white hover:p-2 duration-200">
+                                    <i class="fa-solid fa-chevron-right pr-2"></i>
+                                    Form Pengajuan Informasi Publik
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-between space-x-5 px-10 text-xl">
+                                <a href="" class="text-xl underline decoration-2 underline-offset-8 hover:no-underline hover:bg-emerald-300 hover:text-white hover:p-2 duration-200">
+                                <i class="fa-solid fa-chevron-right pr-2"></i>
+                                Form Pengajuan Keberatan Informasi
+                                </a>
+                            </div>
+                            <div class="flex items-center justify-between space-x-5 px-10 text-xl">
+                                <a href="" class="text-xl underline decoration-2 underline-offset-8 hover:no-underline hover:bg-emerald-300 hover:text-white hover:p-2 duration-200">
+                                    <i class="fa-solid fa-chevron-right pr-2"></i>
+                                    Form Penyalahgunaan Wewenang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute right-0 bottom-0 w-72">
+                        <img src="../img/rb_469.png" alt="image">
+                    </div>
+                </section>
+                <section class="h-screen">
+
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex justify-around items-start py-10">
+            <div class="flex flex-col items-start max-w-96 p-4 space-y-8">
+                <div>
+                    <img class="max-w-48 h-auto" src="../img/main-logo.png" alt="Logo">
+                </div>
+                <div>
+                    <p class="text-wrap font-bold">Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah Provinsi Sulawesi Selatan</p>
+                </div>
+                <div class="text-4xl space-x-6 text-emerald-300">
+                    <a href="#" aria-label="facebook link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="instagram link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="youtube link"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="x-twitter link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col items-start max-w-96 p-4 space-y-8">
+                <div>
+                    <p class="text-2xl font-bold text-emerald-300">Hubungi Kami</p>
+                </div>
+                <div class="flex space-x-3">
+                    <i class="fa-solid fa-mobile text-4xl text-emerald-300 w-10"></i>
+                    <div class="flex items-start justify-start font-bold">
+                        <p>Telepon : 0411-453486 (Ext.1)</p>
+                    </div>
+                </div>
+                <div class="flex space-x-3">
+                    <i class="fa-regular fa-envelope text-4xl text-emerald-300 w-10"></i>
+                    <div class="flex flex-col items-start justify-start font-bold">
+                        <p>Email :</p>
+                        <p>bappelitbangda@sulselprov.go.id</p>
+                        <p>Bappelitbangda22@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex space-x-3">
+                    <i class="fa-regular fa-map text-4xl text-emerald-300 w-10"></i>
+                    <div class="flex flex-col items-start font-bold">
+                        <p>Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah Jl. Urip Sumoharjo No.269 Km.5 Makassar, Sulawesi Selatan, 90231</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-start max-w-96 p-4 space-y-8">
+                <div>
+                    <p class="text-2xl font-bold text-emerald-300">Statistik Pengunjung</p>
+                </div>
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="text-8xl text-emerald-300">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="font-bold">
+                        <p>Hari Ini : 73</p>
+                        <p>Bulan Ini : 803</p>
+                        <p>Tahun Ini : 803</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-11/12 h-[1px] bg-emerald-300 m-auto" aria-label="differ"></div>
+        <div class="flex justify-start items-center h-20">
+            <p class="py-4 px-10">&copy;  Copyright 2025 Bappelitbangda Sulsel All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" type="button" class="fixed bottom-5 right-5 hidden bg-blue-400 text-white w-10 h-10 shadow-lg scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
